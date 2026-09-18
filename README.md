@@ -1,8 +1,27 @@
-# Dessert House — menu & ordering app
+# Sign Laban — menu & ordering app
 
-A Next.js app showing your real dessert/cake menu, with a working cart
-and order placement, styled with a warm bakery palette. One project,
-one server, no separate backend to run.
+A Next.js app for Sign Laban's real menu (flavor-variant desserts),
+styled around their own brand palette — warm sand, charcoal, and
+terracotta/gold accents. One project, one server, working cart and
+order placement.
+
+## What changed from the earlier dessert-house version
+
+- **Products now have flavor variants.** Each dessert (e.g. Salankatia)
+  is one product at one price, offered in several flavors. Customers
+  pick a flavor before adding to cart — see `components/ItemCard.jsx`.
+- **Colors and fonts match Sign Laban's brand direction** — see
+  `tailwind.config.js` for the exact palette. These are a close visual
+  reading of their site, not exact extracted values — update them if
+  you get official brand hex codes from the client.
+- **Colors now match the real site**, pulled from Sign Laban's actual
+  HTML/CSS instead of a visual guess — see `tailwind.config.js`.
+- **Image placeholders are wired in.** Every item shows a dashed
+  placeholder box until a real photo is added. To add one: drop the
+  file in `public/images/` named after the item's `slug` (see
+  `data/menuData.js`), then set that item's `image` field to the
+  file's path, e.g. `/images/salankatia.jpg`. See
+  `public/images/README.md` for the full convention.
 
 ## 1. Run it locally (works immediately, no setup)
 
