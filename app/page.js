@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
 
 export default function Home() {
-  redirect('/menu/dessert-house/table-1')
+  redirect('/menu/sign-laban/table-1')
 }

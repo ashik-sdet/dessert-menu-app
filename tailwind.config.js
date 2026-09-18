@@ -7,29 +7,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // "Patisserie counter at night" — a dark espresso backdrop
-        // (like the inside of a bakery display case) instead of the
-        // generic pale-cream-with-pastel-cards look. One saturated
-        // raspberry accent carries every action; gold is reserved for
-        // prices and thin dividers so it stays a quiet detail, not
-        // decoration. Change these to your real brand colors later —
-        // every component references these names, so a swap here
-        // updates the whole app.
-        espresso: '#2B1810',
-        espressoLight: '#3D2417',
-        cream: '#FBF3E7',
-        cocoa: '#4A2C22',
-        raspberry: '#C1355E',
-        raspberryDark: '#9C2649',
-        gold: '#D9A441',
+        // Pulled directly from Sign Laban's real site CSS (not a
+        // guess) — see the approved preview this was matched against.
+        page: 'rgb(229, 231, 235)',
+        ink: '#000000',
+        muted: '#6B7280',
+        accent: '#00A1E4',
+        accentDark: '#0081B8',
+        maroon: '#60021A',
+        card: '#FFFFFF',
+        placeholderBg: '#E9EAEC',
       },
       fontFamily: {
-        // Fraunces is a warm, characterful serif with real optical
-        // weight for a menu board — deliberately not the generic
-        // Playfair Display pairing. Work Sans stays quiet for body
-        // text, prices, and labels.
-        display: ['"Fraunces"', 'serif'],
-        body: ['"Work Sans"', 'sans-serif'],
+        body: ['"Manrope"', 'sans-serif'],
+        display: ['"SignLabanDisplay"', '"Manrope"', 'sans-serif'],
+      },
+      keyframes: {
+        'splash-zoom': {
+          '0%': { transform: 'scale(2.6)', opacity: '0' },
+          '15%': { opacity: '1' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+      animation: {
+        'splash-zoom': 'splash-zoom 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
       },
     },
   },
