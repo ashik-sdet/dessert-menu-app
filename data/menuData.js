@@ -30,7 +30,6 @@ const menuData = {
     bestSellers: [
       { itemId: 1, flavor: 'Pistachio' }, // Salankatia
       { itemId: 11, flavor: 'Nutella' }, // Ruh Hayati
-      { itemId: 11, flavor: 'Pistachio' }, // Ruh Hayati
       { itemId: 11, flavor: 'Pistachio Lotus' }, // Ruh Hayati
       { itemId: 10, flavor: 'Pistachio' }, // Crispy Umm Ali
       { itemId: 5, flavor: 'Pistachio' }, // Bambooza
